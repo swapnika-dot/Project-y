@@ -1,0 +1,9 @@
+import boto3
+s3_client= boto3.client('s3')
+bucket_name= "aws-s3-v"
+response = s3_client.create_bucket(
+    Bucket='Boto3-1',
+    CreateBucketconfiguration={'LocationConstraint':'ap-south-1'}
+)
+
+
